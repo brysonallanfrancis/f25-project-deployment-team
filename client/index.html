@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fantasy Football Roster</title>
+    <link rel="stylesheet" href="styles.css"></head>
+<body>
+    <h1>Fantasy Football Roster Manager</h1>
+    <form onsubmit="">
+        <label for="input_name">Player Name:</label>
+        <input id="input_name" type="text">
+        <label for="input_position">Player position:</label>
+        <input id="input_position" type="text">
+        <label for="input_team">Player team:</label>
+        <input id="input_team" type="text">
+        <label for="input_points">Projected points:</label>
+        <input id="input_points" type="number">
+        <button type="button" id="submit_button">Submit</button>
+    </form>
+    <div id="container" class="container">
+        <div id="Roster" class="column">
+            <h2>Roster</h2>
+            
+        </div>
+        <div id="Field">
+            <div id="QB" data-position="QB" class="column">
+                <h2>QB</h2>
+            </div>
+            <div id="RB1" data-position="RB" class="column">
+                <h2>RB</h2>
+            </div>
+            <div id="RB2" data-position="RB" class="column">
+                <h2>RB</h2>
+            </div>
+            <div id="WR1" data-position="WR" class="column">
+                <h2>WR</h2>
+            </div>
+            <div id="WR2" data-position="WR" class="column">
+                <h2>WR</h2>
+            </div>
+            <div id="TE" data-position="TE" class="column">
+                <h2>TE</h2>
+            </div>
+            <div id="FLEX" data-position="FLEX" class="column">
+                <h2>FLEX</h2>
+            </div>
+            <div id="D" data-position="D" class="column">
+                <h2>D</h2>
+            </div>
+            <div id="K" data-position="K" class="column">
+                <h2>K</h2>
+            </div>
+            <div id="totalPoints">
+                <h3>Total Projected Points:</h3>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="app.js"></script>
