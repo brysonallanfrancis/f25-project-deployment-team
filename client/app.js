@@ -5,7 +5,7 @@ let edit_id = null;
 let dragged_thing = null;
 const boxes = document.querySelectorAll('.box');
 const dropZones = document.querySelectorAll('.column');
-let URL = "http://localhost:5000/players"
+let URL = "http://144.38.200.251:80/players"
 
 
 function load(){
