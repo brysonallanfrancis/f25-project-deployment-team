@@ -1,4 +1,21 @@
 import sqlite3
+
+def create_db():
+    connection = sqlite3.connect("fantasy.db")
+    cursor = connection.cursor()
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS fantasy (
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
+        position TEXT NOT NULL,
+        team TEXT NOT NULL,
+        points DECIMAL(5,2) NOT NULL,
+        field TEXT
+    )
+    """)
+    cursor.connection.commit()
+    connection.close()
+
 def dict_factory(cursor, row):
     fields = []
     # Extract column names from cursor description

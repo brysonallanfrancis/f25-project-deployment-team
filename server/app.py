@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
-from db import DB
+from db import DB, create_db
+create_db()
 app = Flask(__name__)
 
 @app.route("/players/<int:id>", methods=["OPTIONS"])
